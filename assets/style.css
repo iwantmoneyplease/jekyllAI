@@ -1,0 +1,33 @@
+body {
+  background-color: #FFFFF6;
+}
+
+.headerbar {
+  background-color: #000000;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/*# sourceMappingURL=style.css.map */
+
+:root {
+  --bg-color: #FFFFF6;
+  --text-color: #222222;
+  --accent-color: #448195;
+}
+
+
+body {
+    background-color: var(--bg-color);
+}
+
+.headerbar {
+    background-color: #000000;
+}
+
+img {
+    max-width: 100%;
+}

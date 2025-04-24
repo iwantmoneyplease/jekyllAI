@@ -1,0 +1,19 @@
+
+
+{% include header.html %}
+
+    <main>
+        {% if page.image %}
+        <div> id="main-img"
+            <img src="{{page.image}}">
+        </div>
+        {% endif %}
+
+        {% for item in page.clothes %}
+            <img src="assets\front.avif">
+        {% endfor %}
+
+        {{content}}
+    </main>
+
+{% include footer.html %}

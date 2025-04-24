@@ -1,0 +1,12 @@
+<!--
+{% logik %}
+{{ output }}
+-->
+
+
+
+1. Kolla vad för info
+2. Skriv över infon i .md-filer (.md = markdown)
+3. Sätt upp html struktur utifrån desgin + .md-filer
+4. Skriv css
+5. profit

@@ -1,0 +1,13 @@
+{% include header.html %}
+
+    <main>
+        {% for post in site.posts %}
+            <a href="{{post.url}}">{{post.title}}</a>
+            <p>{{post.short-info}}</p>
+            <a href="{{post.url}}">Read more...</a>
+            <img src="{{post.img}}">
+        {% endfor %}
+    </main>
+
+{% include footer.html %}
+
