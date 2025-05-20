@@ -4,13 +4,13 @@
 
     <main>
         {% if page.image %}
-        <div> id="main-img"
-            <img src="{{page.image}}">
+        <div> 
+            
         </div>
         {% endif %}
 
         {% for item in page.clothes %}
-            <img src="assets\front.avif">
+            <img src="{{site.baseurl}}\assets\front.avif">
         {% endfor %}
 
         {{content}}

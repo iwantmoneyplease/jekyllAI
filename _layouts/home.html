@@ -1,13 +1,38 @@
 {% include header.html %}
 
     <main>
-        {% for post in site.posts %}
-            <a href="{{post.url}}">{{post.title}}</a>
-            <p>{{post.short-info}}</p>
-            <a href="{{post.url}}">Read more...</a>
-            <img src="{{post.img}}">
-        {% endfor %}
+      <section class="main-content">
+
+        <article class="hero-article">
+          {% assign hero_post = site.posts | where: "permalink", "/blog/vague_ai_stuff/" | first %}
+          <a href="{{ hero_post.url | relative_url }}"
+            <div class="hero-wrapper">
+              <img src="{{site.baseurl}}/assets/img/hero1.png" class="hero-img">
+              <div class="hero-text">
+                <h2>Vague AI stuff</h2>
+                <p>Vague AI stuff... This is the future of AI, powered by AI, for AI. AI AI releasing soon.</p>
+                <button class="read-more-btn">Read More</button>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <hr class="section-divider">
+            <div class="article-grid">
+              {% for post in site.posts %}
+                <div class="article-card">
+                  <a href="{{ post.url | relative_url }}">
+                    <div class="article-image" style="background-image: url({{ post.image | default: '/assets/img/front.avif' | relative_url }});">
+                      <div class="hover-overlay">
+                        <span class="hover-text">Read More</span>
+                      </div>
+                    </div>
+                    <p class="article-title">{{ post.title }}</p>
+                  </a>
+                </div>
+          {% endfor %}
+        </div>
+      </section>
     </main>
 
 {% include footer.html %}
-
